@@ -8,14 +8,12 @@ import Footer from './components/Footer';
 import Login from './components/Login';
 import { AppContext } from './context/AppContext';
 import { ToastContainer } from 'react-toastify';
-import AnimatePage from './components/Animate';
 
 const App = () => {
   const {showLogin} = useContext(AppContext)
   return (
     <div className="px-10 min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100">
       <ToastContainer position='bottom-right'/>
-      <AnimatePage/>
 
       <Navbar />
       {showLogin && 
